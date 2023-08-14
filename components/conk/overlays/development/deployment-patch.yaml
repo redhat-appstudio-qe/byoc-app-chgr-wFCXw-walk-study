@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: conk
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-ityp-tenant/byoc-app-chgr/conk@sha256:744c1f70bddd4101104626391e87f929332b0210d9bef7d32952d6f39e9d653a
+        name: my-java-quarkus
+        resources: {}
+status: {}
